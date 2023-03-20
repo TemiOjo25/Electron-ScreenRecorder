@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link href="index.css" rel="stylesheet">
+   
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <!-- <h1>Electron Screen Recorder</h1> -->
+    
+    <div class="container">
+      <img src="assets/screenRecord.png" alt="">
+      
+    </div>
+    <video src="" class="vid" ></video>
+
+    <div class="btnContainer">
+      <div class="centerDiv">
+        <button id="startBtn" class="stBtn">START</button>
+        <button id="vidSourceBtn" class="stBtn">STREAM SOURCE</button>
+        <button id="stopBtn" class="stBtn"> STOP </button>
+      </div>
+      
+      
+    </div>
+    
+    <div class="streamContainer">
+      
+    </div>
+
+
+    <script src="render.js"></script>
+  </body>
+</html>
